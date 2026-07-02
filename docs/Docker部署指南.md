@@ -588,11 +588,11 @@ sudo apt-get install -y git  # Ubuntu/Debian
 sudo yum install -y git      # CentOS/RHEL
 
 # 克隆项目代码
-git clone https://github.com/scut-pan/flask_shop_system.git
-cd flask_shop_system
+git clone https://github.com/scut-pan/flask-shop-system.git
+cd flask-shop-system
 
 # 或者上传代码到服务器
-# scp -r /local/path/to/project root@your-server-ip:/root/flask_shop_system
+# scp -r /local/path/to/project root@your-server-ip:/root/flask-shop-system
 ```
 
 #### 4.2 配置环境变量
@@ -770,8 +770,8 @@ server {
 4. **上传证书到服务器**
    ```bash
    # 在本地终端执行,将证书上传到服务器
-   scp /path/to/your-domain.com.pem root@your-server-ip:/root/flask_shop_system/nginx/ssl/cert.pem
-   scp /path/to/your-domain.com.key root@your-server-ip:/root/flask_shop_system/nginx/ssl/key.pem
+   scp /path/to/your-domain.com.pem root@your-server-ip:/root/flask-shop-system/nginx/ssl/cert.pem
+   scp /path/to/your-domain.com.key root@your-server-ip:/root/flask-shop-system/nginx/ssl/key.pem
    ```
 
 5. **修改 Nginx 配置启用 HTTPS**
@@ -824,8 +824,8 @@ sudo certbot --nginx -d your-domain.com -d www.your-domain.com
 # /etc/letsencrypt/live/your-domain.com/privkey.pem
 
 # 将证书复制到项目目录
-sudo cp /etc/letsencrypt/live/your-domain.com/fullchain.pem /root/flask_shop_system/nginx/ssl/cert.pem
-sudo cp /etc/letsencrypt/live/your-domain.com/privkey.pem /root/flask_shop_system/nginx/ssl/key.pem
+sudo cp /etc/letsencrypt/live/your-domain.com/fullchain.pem /root/flask-shop-system/nginx/ssl/cert.pem
+sudo cp /etc/letsencrypt/live/your-domain.com/privkey.pem /root/flask-shop-system/nginx/ssl/key.pem
 
 # 修改 Nginx 配置后重启容器
 docker compose restart nginx
@@ -1313,7 +1313,7 @@ crontab -e
 ### B. 目录结构
 
 ```
-flask_shop_system/
+flask-shop-system/
 ├── app/                    # 应用主目录
 │   ├── static/            # 静态文件
 │   │   └── images/

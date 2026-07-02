@@ -46,7 +46,7 @@ uv --version
 
 #### 2.1 创建项目目录结构
 ```
-flask_shop_system/
+flask-shop-system/
 ├── app/
 │   ├── __init__.py         # Flask应用工厂
 │   ├── extensions.py       # Flask扩展初始化
@@ -97,8 +97,8 @@ flask_shop_system/
 #### 2.2 创建项目基础结构
 ```bash
 # 创建项目目录
-mkdir flask_shop_system
-cd flask_shop_system
+mkdir flask-shop-system
+cd flask-shop-system
 
 # 初始化uv项目（自动生成pyproject.toml）
 uv init

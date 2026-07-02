@@ -127,7 +127,7 @@ uv run python main.py
 ## 项目结构
 
 ```
-flask_shop_system/
+flask-shop-system/
 ├── app/                        # 应用主目录
 │   ├── models/                 # 数据模型
 │   ├── routes/                 # 路由控制
